@@ -1,0 +1,75 @@
+/* Tooltip */
+#link-revealer-tip {
+  position: fixed;
+  z-index: 2147483647;
+  max-width: 640px;
+  font: 12px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  padding: 10px 12px;
+  display: none;
+  word-break: break-all;
+  pointer-events: auto;            /* allow clicking buttons */
+}
+
+#link-revealer-tip .row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 4px 0;
+  flex-wrap: wrap;
+}
+
+#link-revealer-tip .label {
+  font-weight: 700;
+  opacity: .8;
+  white-space: nowrap;
+}
+
+#link-revealer-tip .url {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  word-break: break-all;
+  flex: 1 1 auto;
+}
+
+#link-revealer-tip .btn {
+  border: 1px solid rgba(0,0,0,.15);
+  background: #f8f8f8;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  user-select: none;
+}
+#link-revealer-tip .btn:hover { background: #efefef; }
+
+#link-revealer-tip .warn {
+  color: #b00020;
+  font-weight: 700;
+}
+
+#link-revealer-tip .ok {
+  color: #0b7a0b;
+  font-weight: 600;
+}
+
+#link-revealer-tip .muted {
+  opacity: .7;
+}
+
+@media (prefers-color-scheme: dark) {
+  #link-revealer-tip {
+    background: #111;
+    color: #eee;
+    border-color: rgba(255,255,255,.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+  }
+  #link-revealer-tip .btn {
+    border-color: rgba(255,255,255,.2);
+    background: #1b1b1b;
+  }
+  #link-revealer-tip .btn:hover { background: #222; }
+}
