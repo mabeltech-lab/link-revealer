@@ -1,43 +1,23 @@
-
 # Link Revealer
 
-Reveal hidden URLs, expand short links, and get alerts for suspicious domains — all before you click.  
-Link Revealer helps you browse safely by showing you where a link really goes *before* you click it.
+🔗 Reveal hidden URLs, expand short links, and get alerts for suspicious domains — all before you click.
 
----
+## Features
+- Reveal the true destination behind shortened or obfuscated URLs  
+- Alerts for suspicious or phishing domains  
+- Clean, dark-mode friendly design  
+- No tracking, no analytics  
 
-## ✨ Features
-- 🔎 **Reveal actual URLs** – see the true destination behind any hyperlink
-- 🔗 **Expand short links** – works with bit.ly, t.co, tinyurl, rebrand.ly, and more
-- ⚠️ **Suspicious domain alerts** – warns if a link looks like phishing, uses punycode, or mimics trusted domains
-- 📋 **One-click Copy** – copy the original link or final destination straight from the tooltip
-- 🌙 **Dark mode friendly** – clean design that adapts to your theme
+## Installation
+- Download from the [Chrome Web Store](https://chrome.google.com/webstore/) (link coming soon).  
+- Or install manually by downloading the latest release from [Releases](./releases).
 
----
+## Permissions
+- **activeTab** – lets the extension only access the page you are actively on.  
+- **storage** – stores user preferences (like tooltip style).  
 
-## ❓ Why Link Revealer?
-Cybercriminals often disguise malicious sites behind shortened or look-alike URLs.  
-Link Revealer helps you spot those tricks instantly, keeping your browsing safer and giving you confidence before clicking.
+## Privacy
+This extension does **not** collect, store, or transmit personal data.  
 
----
-
-## 🔒 Privacy
-- No tracking, no analytics, no data collection  
-- All checks run locally in your browser  
-- Short-link expansions are fetched directly from the link’s server to reveal the final destination; no data is sent to us  
-
-See our [Privacy Policy](https://your-vercel-domain.vercel.app/privacy.html).
-
----
-
-## 🛠 Permissions
-- `host_permissions: <all_urls>` – required to read link targets and expand shortened URLs  
-- `storage` – reserved for extension settings (none stored by default)
-
----
-
-## 📦 Install (Developer Mode)
-1. Download or clone this repository  
-2. Go to `chrome://extensions` in Chrome  
-3. Enable **Developer Mode**  
-4. Click **Load unpacked** and select the `link-revealer` folder
+## Support
+For issues, please [open an issue here](../../issues).
